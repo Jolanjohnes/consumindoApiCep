@@ -1,0 +1,124 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.App{
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+
+}
+
+.App form{
+  display: flex;
+  gap: .5rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.App form label{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.App form input{
+  padding: .3rem;
+  border: none;
+  outline: none;
+  border-radius: .2rem;
+}
+
+.App form button{
+  padding: .3rem;
+  margin: 0;
+  align-self: flex-end;
+  border: none;
+  border-radius: .2rem;
+  background-color: violet;
+  color: white;
+  transition: all .3s ;
+}
+
+.App form button:hover{
+  background: white;
+  color: purple;
+  cursor: pointer;  
+}
+
+.App form button:disabled{
+  background-color: #999;
+  color: #000;
+  cursor: not-allowed;
+}
+
+.addressResult h3{
+  margin-bottom: 1rem;
+}
+
+.addressResult{
+  width: 100%;
+}
+
+.addressResult div{
+  display: flex;
+  flex-wrap: wrap;
+  gap: .5rem;
+  
+}
+
+.addressResult div div{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  
+}
+
+
+.addressResult div div input{
+  padding: .3rem;
+  border-radius: .3rem;
+  outline: none;
+  border: none;
+  width: 100%;
+}
+
+.App > button{
+  padding: .5rem;
+  border: none;
+  border-radius: .3rem;
+  background-color: violet;
+  width: 100%;
+  align-self: center;
+  cursor: pointer;
+}
+
+
+@media screen and (min-width:700px) {
+  .addressResult div div{
+    width: 48%;    
+  }
+
+  .App > button{
+    width: 20rem;
+  } 
+}
+
+@media screen and (min-width: 1024px) {
+  .addressResult div div{
+    width: 25%;
+  }
+
+  .addressResult div{
+    justify-content: center;
+  }
+
+  .addressResult div div:first-child{
+    width: 50%;
+  }
+}
